@@ -51,9 +51,21 @@ const result = fizzbuzzTo(1)
     const result = fizzbuzzTo(2)
       expect (result).toEqual([1,2]);
       });
-      it("fizzbuzzz To list of 15", () => {
+     
+      it("fizzbuzzTo returns a list of 15", () => {
         const result = fizzbuzzTo(15);
-        expect(result).toEqual([1,2,"fizz","buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz"]);
+        expect(result).toEqual([1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz",]);
       });
     });
+    
+    //expect.anything(),{
+    //matches anything but null or undefined,
+    //You can use it inside toEqual/toHaveBeenCalledWith instead of a value,
+    //}
+    
+    //.toHaveReturned(),{
+    //If you have a mock function, you can use .toHaveReturned
+    //to test that the mock function successfully returned
+    //(did not throw an error),
+    //}
 

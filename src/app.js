@@ -26,10 +26,12 @@ export function fizzbuzz(a) {
 export function fizzbuzzTo(lastNumber) {
   const list = []
   for (let i = 1; i <= lastNumber; i++) {
-    list.push(i);
+    const result = fizzbuzz(i)
+    list.push(result);
   }
-  return[1];
-  
-  console.log(list);
+  console.log(list)
   return list;
+}
+export function getUser() {
+  return {name: 'Anna', accountStart: getTimeStamp() }
 }
